@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <script src="/assets/js/index.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" href="/assets/img/logo.png" type="image/x-icon" />
+    <title>Muhamad Rizki Munawar</title>
+  </head>
+  <body>
+    <div class="App" id="app">
+      <div class="header">
+        <div class="navbar">
+          <div class="logo">
+            <a href="#app">
+              <img src="/assets/img/logo.png" alt="" />
+              <h1>Rizki Munawar</h1>
+            </a>
+          </div>
+          <div class="nav-item">
+            <ul>
+              <li><a href="#skill">Kemampuan</a></li>
+              <li><a href="#project">Projek</a></li>
+              <li><a href="#resume">Pengalaman</a></li>
+              <li><a href="#contact">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button id="idButton" class="dropbtn" onClick="toggle()">
+              <i class="fa fa-bars"></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <li onClick="toggle()">
+                <a href="#skill">Kemampuan</a>
+              </li>
+              <li onClick="toggle()">
+                <a href="#project">Projek</a>
+              </li>
+              <li onClick="toggle()">
+                <a href="#resume">Pengalaman</a>
+              </li>
+              <li onClick="toggle()">
+                <a href="#contact">Kontak</a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="hero">
+        <div class="container-hero">
+          <div class="hide-img" style="display: none">
+            <img src="/assets/img/foto.png" alt="" />
+          </div>
+          <div class="social-media">
+            <ul>
+              <li>
+                <a href=""><img src="/assets/img/instagram.png" alt="" /></a>
+              </li>
+
+              <li>
+                <a href=""><img src="/assets/img/twitter.png" alt="" /></a>
+              </li>
+
+              <li>
+                <a href=""><img src="/assets/img/linkedin.png" alt="" /></a>
+              </li>
+
+              <li>
+                <a href=""><img src="/assets/img/github.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="content-hero">
+            <div class="content-bio">
+              <h1>Halo Saya</h1>
+              <h2>Muhamad Rizki Munawar</h2>
+              <h3>Programmer</h3>
+              <br />
+
+              <p>Frontend web developer menggunakan HTLM, CSS dan Javascript dan menggunakan libraries dan framework seperti ReactJS, GSAP, Bootstrap and dll.</p>
+            </div>
+            <div class="content-image">
+              <img src="/assets/img/foto.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skill" id="skill">
+        <div class="container">
+          <h1>Skill</h1>
+          <div class="skill-content">
+            <div class="box-content">
+              <div class="box-item">
+                <img src="/assets/img/icon-1.png" alt="" />
+              </div>
+              <div class="box-item">
+                <img src="/assets/img/icon-2.png" alt="" />
+              </div>
+              <div class="box-item">
+                <img src="/assets/img/icon-3.png" alt="" />
+              </div>
+              <div class="box-item">
+                <img src="/assets/img/icon-4.png" alt="" />
+              </div>
+              <div class="box-item">
+                <img src="/assets/img/icon-6.png" alt="" />
+              </div>
+              <div class="box-item">
+                <img src="/assets/img/icon-5.png" alt="" />
+              </div>
+            </div>
+            <div class="bar-content">
+              <div class="bar-item">
+                <div class="content-item">
+                  <h3>HTML/CSS</h3>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="bar-inner">
+                    <div class="progres-bar" style="width: 85%; animation-name: progres-1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-item">
+                <div class="content-item">
+                  <h3>Javascript</h3>
+                  <span>65%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="bar-inner">
+                    <div class="progres-bar" style="width: 65%; animation-name: progres-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bar-item">
+                <div class="content-item">
+                  <h3>Bootstrap</h3>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="bar-inner">
+                    <div class="progres-bar" style="width: 90%; animation-name: progres-4"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-item">
+                <div class="content-item">
+                  <h3>ReactJS</h3>
+                  <span>60%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="bar-inner">
+                    <div class="progres-bar" style="width: 60%; animation-name: progres-3"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-item">
+                <div class="content-item">
+                  <h3>Figma</h3>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="bar-inner">
+                    <div class="progres-bar" style="width: 80%; animation-name: progres-5"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project-area" id="project">
+        <div class="container">
+          <h1>Projek</h1>
+          <div class="container-box">
+            <div class="box-project">
+              <div class="box-image">
+                <img src="/assets/img/SIOPL.jpg" alt="" />
+              </div>
+              <div class="content-project">
+                <h3>Aplikasi web</h3>
+                <span>PT TIMAH</span>
+                <a href="">Detail</a>
+              </div>
+            </div>
+            <div class="box-project">
+              <div class="box-image">
+                <img src="/assets/img/DBS.jpg" alt="" />
+              </div>
+              <div class="content-project">
+                <h3>Aplikasi web</h3>
+                <span>BANK DBS</span>
+                <a href="">Detail</a>
+              </div>
+            </div>
+            <div class="box-project">
+              <div class="box-image">
+                <img src="/assets/img/SIOPL.jpg" alt="" />
+              </div>
+              <div class="content-project">
+                <h3>Aplikasi web</h3>
+                <span>PT TIMAH</span>
+                <a href="">Detail</a>
+              </div>
+            </div>
+            <div class="box-project">
+              <div class="box-image">
+                <img src="/assets/img/SIOPL.jpg" alt="" />
+              </div>
+              <div class="content-project">
+                <h3>Aplikasi web</h3>
+                <span>PT TIMAH</span>
+                <a href="">Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="resume-area" id="resume">
+        <div class="container">
+          <h1>Pengalaman & Pendidikan</h1>
+          <div class="row">
+            <div class="col">
+              <h3>Summary</h3>
+              <div class="resume-item">
+                <h4>Muhamad Rizki Munawar</h4>
+                <p>Frontend web developer menggulkan HTLM, CSS dan Javascript. Menggunakan libraries dan framework seperti ReactJS, GSAP, Bootstrap and etc.</p>
+              </div>
+              <h3>Pendidikan</h3>
+              <div class="resume-item">
+                <h4>Teknik Informatika</h4>
+                <p>Universitas Gunadarma</p>
+                <p>Course : Teknik Informatika</p>
+              </div>
+              <h3>Pengalaman</h3>
+              <div class="resume-item">
+                <h4>Programmer</h4>
+                <p>PT Elixer Reka Digita</p>
+                <p>Fullstack developer</p>
+              </div>
+            </div>
+            <div class="col">
+              <h3>Bootcamp</h3>
+              <div class="resume-item">
+                <h4>Programmer</h4>
+                <p>Dicoding</p>
+                <p>Course : Frontend, Backend</p>
+              </div>
+              <div class="resume-item">
+                <h4>Programmer</h4>
+                <p>Dicoding</p>
+                <p>Course : Frontend, Backend</p>
+              </div>
+              <div class="resume-item">
+                <h4>Programmer</h4>
+                <p>Dicoding</p>
+                <p>Course : Frontend, Backend</p>
+              </div>
+              <div class="resume-item">
+                <h4>Programmer</h4>
+                <p>Dicoding</p>
+                <p>Course : Frontend, Backend</p>
+              </div>
+              <div class="resume-item">
+                <h4>Programmer</h4>
+                <p>Dicoding</p>
+                <p>Course : Frontend, Backend</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-area" id="contact">
+        <div class="container">
+          <h1>Kontak</h1>
+          <div class="submit-content">
+            <form name="submit-contact">
+              <div class="item-submit">
+                <label for="name">Nama</label>
+                <input type="text" name="" id="" />
+              </div>
+              <div class="item-submit">
+                <label for="email">Email</label>
+                <input type="text" name="" id="" />
+              </div>
+              <div class="item-submit">
+                <label for="pesan">Pesan</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </div>
+              <div class="btn">
+                <a href="">Kirim</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="footer">
+        <p>
+          Copyright 2022. <span> <a href=""> Muhamad Rizki Munawar</a></span>
+        </p>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> -->
+  </body>
+</html>

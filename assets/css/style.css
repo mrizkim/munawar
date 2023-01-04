@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+
+* {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  /* background-color: #1e2022; */
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+/* NAVBAR */
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  background-color: #edf2f4;
+  transition: 0.1s;
+  box-shadow: 0 6px 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.solid-nav {
+  background-color: #fff;
+  transition: background-color 0.1s linear;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo img {
+  height: 40px;
+  margin: 10px 0 5px;
+}
+
+.logo a {
+  text-decoration: none;
+}
+.logo h1 {
+  display: none;
+  color: #6facdc;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+}
+.nav-item ul {
+  line-height: 60px;
+}
+.nav-item li {
+  display: inline;
+  margin-right: 20px;
+}
+.nav-item a {
+  text-decoration: none;
+  color: #9c9c9c;
+}
+.nav-item a:hover {
+  color: #6facdc;
+  font-weight: 600;
+}
+
+.dropdown {
+  display: none;
+}
+.dropbtn {
+  background-color: transparent;
+  margin-top: 10px;
+  color: #000;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* margin-top: 10px; */
+}
+
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.show {
+  display: block;
+}
+
+/* AKHIR NAVBAR */
+
+.container {
+  max-width: 1320px;
+  margin: auto;
+}
+
+/* HERO */
+
+.hero {
+  /* position: relative; */
+  width: 100%;
+  overflow: hidden;
+  transition: 2s;
+}
+.container-hero {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 150px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.social-media ul {
+  border: 3px solid black;
+  border-radius: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 80px;
+  list-style-type: none;
+}
+
+.social-media li {
+  padding: 10px 10px;
+}
+
+.social-media li img:hover {
+  opacity: 0.5;
+}
+.content-hero {
+  width: 1000px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90.55deg, #3ac1de -13.39%, #256bf4 99.74%);
+  /* box-shadow: inset 0px -30px 50px #256bf4, inset -40px 0px 24px #0b59f5; */
+  border-radius: 100px;
+  border: 3px solid black;
+  position: relative;
+  /* z-index: -1; */
+  /* transition: 2s; */
+}
+.content-bio {
+  padding-left: 20px;
+  width: 700px;
+  margin: auto 0;
+  /* transition: 2s; */
+}
+.content-bio h2 {
+  line-height: 80px;
+  font-size: 50px;
+  /* transition: 2s; */
+}
+.content-image {
+  position: absolute;
+  animation: move 1s both;
+  bottom: -650px;
+  right: 40px;
+}
+.content-image img {
+  /* transition: 2s; */
+}
+
+/* .hide-img {
+  position: absolute;
+  bottom: -200px;
+  left: 200px;
+  z-index: -9999;
+} */
+
+@keyframes move {
+  0% {
+    bottom: -650px;
+    right: 40px;
+  }
+  100% {
+    bottom: -50px;
+    right: 40px;
+  }
+}
+
+/* AKHIR HERO */
+
+/* ABOUT */
+.skill {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.skill .container h1 {
+  text-align: center;
+  font-size: 35px;
+  color: #3e90d0;
+  margin-bottom: 30px;
+  padding: 30px 0;
+  border-bottom: 3px solid #3e90d0;
+}
+
+.skill-content {
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.box-content {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 24px;
+  justify-content: center;
+  padding-right: 50px;
+}
+.box-item {
+  background: rgba(255, 255, 255, 0.5);
+  width: 160px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #000;
+  margin: auto;
+}
+
+.box-item:hover {
+  box-shadow: none;
+}
+.box-item img {
+  height: 80px;
+  padding: 10px;
+}
+
+.bar-content {
+  width: 50%;
+  box-sizing: border-box;
+  margin-right: 50px;
+}
+.bar-item {
+  width: 100%;
+  padding: 16px 0;
+}
+.content-item {
+  display: flex;
+  justify-content: space-between;
+}
+.bar-inner {
+  min-width: 90%;
+  height: 11px;
+  background-color: #aeaeae;
+  border-radius: 10px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.progres-bar {
+  height: 10px;
+  background: linear-gradient(90.55deg, #3ac1de -13.39%, #256bf4 99.74%);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  animation-duration: 5s;
+}
+@keyframes progres-1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes progres-2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@keyframes progres-3 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes progres-4 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes progres-5 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+/* AKHIR ABOUT */
+
+/* PROJECT */
+.project-area {
+  margin-top: 100px;
+}
+.project-area .container h1 {
+  text-align: center;
+  font-size: 35px;
+  color: #3e90d0;
+  margin-bottom: 30px;
+  padding: 30px 0;
+  border-bottom: 3px solid #3e90d0;
+}
+.container-box {
+  margin: 0 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.box-project {
+  width: 400px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+}
+
+.box-image {
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.box-project img {
+  width: 100%;
+  background-size: cover;
+}
+
+.box-project:hover img {
+  transform: scale(1.1);
+}
+
+.content-project {
+  position: relative;
+  padding: 0 0 30px 30px;
+  line-height: 2;
+}
+
+.content-project a {
+  position: absolute;
+  width: 80px;
+  right: 0;
+  margin-right: 30px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  background: linear-gradient(90.55deg, #256bf4 -13.39%, #3ac1de 99.74%);
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.content-project a:hover {
+  background: linear-gradient(180deg, #ffb94a 0%, #f4693f 100%);
+}
+/* AKHIR PROJECT */
+
+/* Resume */
+.resume-area {
+  margin-top: 100px;
+  background-color: #edf2f4;
+}
+.resume-area h1 {
+  text-align: center;
+  font-size: 35px;
+  color: #3e90d0;
+  padding: 30px 0;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #3e90d0;
+}
+.row {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin: 0 50px;
+  justify-content: center;
+}
+
+.col {
+  position: relative;
+}
+.col h3 {
+  font-size: 26px;
+}
+
+.resume-item {
+  padding: 0 80px 20px 20px;
+  border-left: 2px solid #3e90d0;
+}
+
+.resume-item p {
+  color: #000;
+}
+
+.resume-item::before {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: -9px;
+  border-radius: 50%;
+  border: 2px solid #3e90d0;
+}
+
+@media (max-width: 800px) {
+  .col {
+    flex: 100%;
+  }
+}
+@media (max-width: 1440px) {
+  .col {
+    flex: 100%;
+  }
+}
+/* Akhir Resume */
+
+/* Contact */
+.contact-area {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background-color: #edf2f4;
+}
+.contact-area h1 {
+  text-align: center;
+  font-size: 35px;
+  color: #3e90d0;
+  border-bottom: 3px solid #3e90d0;
+  padding: 30px 0;
+}
+.submit-content {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+form label {
+  display: block;
+  margin: 5px 0;
+}
+
+form input,
+textarea {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 20px 10px;
+  width: 100%;
+  resize: none;
+}
+
+form .btn {
+  margin-top: 20px;
+}
+
+form a {
+  padding: 5px 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  background: linear-gradient(90.55deg, #256bf4 -13.39%, #3ac1de 99.74%);
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+form a:hover {
+  background: linear-gradient(180deg, #ffb94a 0%, #f4693f 100%);
+}
+/* Akhir Contact */
+
+.footer {
+  /* margin-top: 200px; */
+  background-color: #000;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+.footer span a {
+  color: #aeaeae;
+  text-decoration: none;
+}
+
+section {
+  padding-top: 3rem;
+}
+h1 {
+  color: #fff;
+}
+p {
+  color: #fff;
+}

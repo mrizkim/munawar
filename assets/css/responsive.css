@@ -1,0 +1,294 @@
+@media (max-width: 1320px) {
+  .social-media ul {
+    border: 2px solid black;
+    margin-top: 100px;
+    /* transition: 2s; */
+  }
+  .social-media li {
+    padding: 3px 5px;
+  }
+  .social-media li img {
+    transform: scale(0.8);
+  }
+  .content-hero {
+    width: 850px;
+    height: 350px;
+    /* transition: 2s; */
+  }
+  .content-bio {
+    width: 600px;
+    /* transition: 2s; */
+  }
+  .content-bio h2 {
+    font-size: 40px;
+    /* transition: 2s; */
+  }
+  .content-image img {
+    transform: scale(0.9);
+    /* transition: 2s; */
+  }
+}
+@media (max-width: 992px) {
+  .row {
+    grid-template-columns: 80%;
+  }
+  .content-hero {
+    /* margin-top: 100px; */
+    width: 650px;
+    height: 350px;
+    /* transition: 2s; */
+  }
+  /* .content-bio {
+    width: 600px;
+  } */
+  .content-bio h2 {
+    font-size: 40px;
+    /* transition: 2s; */
+  }
+  .content-image {
+    display: none;
+    /* z-index: -9999; */
+    /* transition: 2s; */
+  }
+  /* .hide-img {
+    bottom: 0;
+  } */
+
+  .box-content {
+    margin-left: 50px;
+  }
+  .box-item {
+    width: 100px;
+    margin: auto;
+  }
+  .box-item img {
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .App {
+    margin: 0;
+    padding: 0;
+  } */
+  .navbar {
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    height: 30px;
+    margin-top: 15px;
+  }
+  .nav-item {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+  }
+
+  .hero {
+    margin: 0px;
+  }
+  .container-hero {
+    margin: 0px;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto 200px;
+    /* grid-template-columns: auto; */
+    grid-template-areas:
+      "image"
+      "content"
+      "social";
+  }
+
+  .social-media {
+    display: grid;
+    justify-content: center;
+    /* margin: 0px; */
+    margin-top: 0px;
+    grid-area: social;
+  }
+  .social-media ul {
+    padding: 0 20px;
+  }
+  .social-media li {
+    display: inline-block;
+  }
+
+  .content-hero {
+    grid-area: content;
+    max-width: 100vw;
+    height: 70vw;
+    background: none;
+    border: none;
+  }
+
+  .content-bio {
+    /* margin: 10px 0 -10px -5px; */
+    margin-top: 20px;
+    margin-left: -5px;
+    padding-right: 5px;
+    display: grid;
+    gap: 1px;
+  }
+
+  .content-bio h1 {
+    color: #3e90d0;
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+  }
+  .content-bio h2 {
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+  .content-bio h3 {
+    font-size: 1rem;
+  }
+  .content-bio p {
+    color: #3e90d0;
+    font-size: 0.9rem;
+    margin-top: -10px;
+  }
+
+  .hide-img {
+    display: grid !important;
+    margin-top: 20px;
+    grid-area: image;
+    overflow: hidden;
+    height: 300px;
+  }
+
+  .hide-img img {
+    margin: auto;
+    width: 200px;
+  }
+  /* skill */
+  .skill .container h1 {
+    font-size: 1.5rem;
+  }
+
+  .skill-content {
+    display: grid;
+  }
+
+  .box-content {
+    grid-template-columns: auto auto auto;
+  }
+
+  .box-item {
+    width: 70px;
+  }
+
+  .box-item img {
+    height: 40px;
+    padding: 15px 0 10px 0;
+  }
+
+  .bar-content {
+    text-align: center;
+    width: 90vw;
+    margin: 10px auto;
+  }
+
+  .content-item h3 {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .content-item span {
+    font-size: 0.7rem;
+  }
+  /* akhir skill */
+
+  /* projek */
+  .project-area .container h1 {
+    font-size: 1.5rem;
+  }
+  .container-box {
+    margin: auto;
+  }
+
+  .box-project {
+    width: 90vw;
+    margin: 10px auto;
+  }
+
+  .content-project h3 {
+    font-size: 1rem;
+  }
+
+  .content-project span {
+    font-size: 0.8rem;
+  }
+
+  .content-project a {
+    width: 50px;
+    font-size: 0.8rem;
+  }
+  /* akhir projek */
+
+  /* resume */
+  .resume-area .container h1 {
+    font-size: 1.5rem;
+  }
+  .row {
+    grid-template-columns: auto;
+  }
+
+  .col {
+    width: 80vw;
+  }
+
+  .col h3 {
+    font-size: 1rem;
+  }
+
+  .resume-item {
+    padding-right: 0;
+  }
+
+  .resume-item h4 {
+    font-size: 0.9rem;
+  }
+
+  .resume-item p {
+    font-size: 0.7rem;
+  }
+  /* akhir resume */
+
+  /* contact */
+  .contact-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contact-area .container h1 {
+    font-size: 1.5rem;
+  }
+
+  form {
+    width: 70vw;
+  }
+
+  .item-submit label {
+    font-size: 0.7rem;
+  }
+
+  form input {
+    padding: 5px 10px;
+  }
+
+  /* akhir contact */
+
+  /* footer */
+  .footer {
+    height: 50px;
+    line-height: 50px;
+  }
+  .footer p {
+    font-size: 0.5rem;
+  }
+  /* akhir footer */
+}
